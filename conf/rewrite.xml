@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8">
+    <rewrite>
+        <item>
+            <urlPrefix>/commons</urlPrefix>
+            <urlRegex>^/commons\\?(.*)$</urlRegex>
+            <urlRegexReplace>/commons?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+        <item>
+            <urlPrefix>/users</urlPrefix>
+            <urlRegex>^/users\\?(.*)$</urlRegex>
+            <urlRegexReplace>/users?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+<!--        <item>
+            <urlPrefix>/deals</urlPrefix>
+            <urlRegex>^/deals\\?(.*)$</urlRegex>
+            <urlRegexReplace>/deals?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+        <item>
+            <urlPrefix>/brands</urlPrefix>
+            <urlRegex>^/brands\\?(.*)$</urlRegex>
+            <urlRegexReplace>/brands?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+
+        <item>
+            <urlPrefix>/categories</urlPrefix>
+            <urlRegex>^/categories\\?(.*)$</urlRegex>
+            <urlRegexReplace>/categories?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+
+        <item>
+            <urlPrefix>/areas</urlPrefix>
+            <urlRegex>^/areas\\?(.*)$</urlRegex>
+            <urlRegexReplace>/areas?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+        <item>
+            <urlPrefix>/products</urlPrefix>
+            <urlRegex>^/products\\?(.*)$</urlRegex>
+            <urlRegexReplace>/products?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+         <item>
+            <urlPrefix>/questions</urlPrefix>
+            <urlRegex>^/questions\\?(.*)$</urlRegex>
+            <urlRegexReplace>/questions?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+
+	   <item>
+            <urlPrefix>/answers</urlPrefix>
+            <urlRegex>^/answers\\?(.*)$</urlRegex>
+            <urlRegexReplace>/answers?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item> 
+        <item>
+            <urlPrefix>/comments</urlPrefix>
+            <urlRegex>^/comments\\?(.*)$</urlRegex>
+            <urlRegexReplace>/comments?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+
+	<item>
+            <urlPrefix>/stores</urlPrefix>
+            <urlRegex>^/stores\\?(.*)$</urlRegex>
+            <urlRegexReplace>/stores?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+        <item>
+            <urlPrefix>/contacts</urlPrefix>
+            <urlRegex>^/contacts\\?(.*)$</urlRegex>
+            <urlRegexReplace>/contacts?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
+        
+        <item>
+            <urlPrefix>/events</urlPrefix>
+            <urlRegex>^/events\\?(.*)$</urlRegex>
+            <urlRegexReplace>/events?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>-->
+    </rewrite>
+</xml>
