@@ -4,13 +4,13 @@
  */
 package api.utils;
 
-import com.shopiness.framework.common.LogUtil;
+import com.kyt.framework.config.LogUtil;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  *
- * @author danhnc
+ * @author Y Sa
  */
 public class LocalCached {
 

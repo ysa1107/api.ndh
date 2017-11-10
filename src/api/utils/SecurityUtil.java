@@ -12,7 +12,7 @@ import org.apache.commons.codec.binary.Base64;
 
 /**
  *
- * @author nghiapht
+ * @author Y Sa 
  */
 public class SecurityUtil {
 

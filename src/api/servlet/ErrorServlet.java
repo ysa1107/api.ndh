@@ -6,7 +6,7 @@
 package api.servlet;
 
 import api.entities.JsonResultEnt;
-import com.shopiness.framework.util.JSONUtil;
+import com.kyt.framework.util.JSONUtil;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -16,14 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author cuonglv
+ * @author Y Sa
  */
 public class ErrorServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {       
         resp.setStatus(400);
-        resp.setHeader("link", "<http://stc.id.nixcdn.com/10/images/favicon.ico>; rel=\"shortcut icon\"");
+        //resp.setHeader("link", "<http://stc.id.nixcdn.com/10/images/favicon.ico>; rel=\"shortcut icon\"");
         JsonResultEnt outputJson = JsonResultEnt.getJsonSystemError();
         try (PrintWriter out = resp.getWriter()) {
             out.print(JSONUtil.Serialize(outputJson));

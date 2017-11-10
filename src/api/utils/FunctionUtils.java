@@ -4,17 +4,10 @@
  */
 package api.utils;
 
-import api.cache.ApiCA;
 import api.configuration.ConfigInfo;
-import api.entities.DeviceInfoEnt;
 import api.serviceUtils.JWTService;
 import api.serviceUtils.UserService;
-//import com.nct.api.tokenv2.model.TokenBC;
-import com.nct.shop.thrift.deal.models.TUserResult;
-import com.shopiness.framework.common.LogUtil;
-import com.shopiness.framework.util.ConvertUtils;
-import com.shopiness.framework.util.JSONUtil;
-import com.shopiness.framework.util.StringUtils;
+import com.kyt.framework.config.LogUtil;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -35,22 +28,13 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang.WordUtils;
 import org.apache.log4j.Logger;
-import shopiness.api.jwt.token.model.EJwtTokenStatusResult;
-import shopiness.api.jwt.token.model.JwtTokenResult;
-import shopiness.api.tokenv2.model.TokenBC;
-import shopiness.rewrite.entity.RewriteEntity;
-import shopiness.rewrite.utils.ShopinessRewriteUtils;
 
 /**
  *
- * @author trailn
+ * @author Y Sa
  */
 public class FunctionUtils {
 

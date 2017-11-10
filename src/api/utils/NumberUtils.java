@@ -4,16 +4,16 @@
  */
 package api.utils;
 
-import com.shopiness.framework.util.ConvertUtils;
+import com.kyt.framework.util.ConvertUtils;
+
 
 
 /**
  *
- * @author giangnm
+ * @author Y Sa
  */
 public class NumberUtils {
 
-    //private static String str36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static String str36 = "23456789ABCDEFGHJKMNPQRSTUVWXYZ";
     private static final String _str26 = "qwertyuiopasdfghjklzxcvbnm";
     private static int _len = 9;

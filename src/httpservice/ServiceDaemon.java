@@ -6,7 +6,7 @@ package httpservice;
 
 import api.utils.FunctionUtils;
 import api.configuration.ConfigInfo;
-import com.shopiness.framework.util.ConvertUtils;
+import com.kyt.framework.util.ConvertUtils;
 import java.lang.management.ManagementFactory;
 import java.util.EnumSet;
 import javax.servlet.DispatcherType;
@@ -29,14 +29,13 @@ import org.eclipse.jetty.util.thread.ScheduledExecutorScheduler;
 
 /**
  *
- * @author PhongDQ
+ * @author Y Sa
  */
 public class ServiceDaemon {
     
     public static void main(String[] args) throws Exception {
         
         FunctionUtils.warmListRewriteEntity();
-//        FunctionUtils.warmListHadlers();
         
         QueuedThreadPool threadPool = new QueuedThreadPool();
         
@@ -95,17 +94,6 @@ public class ServiceDaemon {
         // Servlet Mapping URL
         handler.addServlet("api.servlet.CommonServlet", "/commons");
         handler.addServlet("api.servlet.UserServlet", "/users");
-        handler.addServlet("api.servlet.DealServlet", "/deals");
-        
-        handler.addServlet("api.servlet.BrandServlet", "/brands");
-        handler.addServlet("api.servlet.CategoryServlet", "/categories");
-        handler.addServlet("api.servlet.AreaServlet", "/areas");
-        handler.addServlet("api.servlet.StoreServlet", "/stores");
-        handler.addServlet("api.servlet.ProductServlet", "/products");
-        handler.addServlet("api.servlet.CommentServlet", "/comments");
-        handler.addServlet("api.servlet.ContactServlet", "/contacts");
-        handler.addServlet("api.servlet.EventServlet", "/events");
-        handler.addServlet("api.servlet.CashbackServlet", "/cashbacks");
         
         handler.addServlet("api.servlet.ErrorServlet", "/errors");
 
