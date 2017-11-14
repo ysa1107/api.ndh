@@ -1,0 +1,58 @@
+ INFO [main] 2017-11-13 22:14:31,024 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 22:14:31,251 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 22:14:31,630 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@38bc8ab5{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 22:14:31,739 AbstractConnector.java (line 265) Started ServerConnector@7c29daf3{HTTP/1.1}{localhost:25002}
+ INFO [qtp159259014-20 - /v1/users/get-list] 2017-11-13 22:15:17,369 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp159259014-20 - /v1/users/get-list] 2017-11-13 22:15:17,377 UserService.java (line 236) get-list: 
+ INFO [qtp159259014-20 - /v1/users/get-list] 2017-11-13 22:15:17,568 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","loadmore":false,"total":0}
+ INFO [Thread-1] 2017-11-13 22:15:37,067 AbstractConnector.java (line 302) Stopped ServerConnector@7c29daf3{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-13 22:15:37,074 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@38bc8ab5{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-13 22:15:47,035 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 22:15:47,273 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 22:15:47,793 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@b3ca52e{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 22:15:47,897 AbstractConnector.java (line 265) Started ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [qtp785447854-22 - /v1/users/get-list] 2017-11-13 22:16:19,576 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp785447854-22 - /v1/users/get-list] 2017-11-13 22:16:42,370 UserService.java (line 236) get-list: 
+ INFO [qtp785447854-22 - /v1/users/get-list] 2017-11-13 22:18:00,629 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","loadmore":false,"total":0}
+ INFO [Thread-1] 2017-11-13 22:18:00,632 AbstractConnector.java (line 302) Stopped ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-13 22:18:00,639 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@b3ca52e{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-13 22:18:09,233 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 22:18:09,495 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 22:18:10,404 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@b3ca52e{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 22:18:10,520 AbstractConnector.java (line 265) Started ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [qtp785447854-22 - /v1/users/get-list] 2017-11-13 22:18:11,562 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp785447854-22 - /v1/users/get-list] 2017-11-13 22:18:16,221 UserService.java (line 236) get-list: 
+ INFO [Thread-1] 2017-11-13 22:18:45,135 AbstractConnector.java (line 302) Stopped ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-13 22:18:45,145 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@b3ca52e{/,null,UNAVAILABLE}
+ INFO [qtp785447854-22 - /v1/users/get-list] 2017-11-13 22:18:45,162 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","loadmore":false,"total":0}
+ INFO [main] 2017-11-13 22:19:47,470 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 22:19:47,961 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 22:19:48,318 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@23d2a7e8{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 22:19:48,388 AbstractConnector.java (line 265) Started ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
+ INFO [qtp356473385-14 - /v1/users/get-list] 2017-11-13 22:19:49,391 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp356473385-14 - /v1/users/get-list] 2017-11-13 22:19:49,394 UserService.java (line 236) get-list: 
+ INFO [qtp356473385-14 - /v1/users/get-list] 2017-11-13 22:19:51,408 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","loadmore":false,"total":0}
+ INFO [Thread-1] 2017-11-13 22:19:55,905 AbstractConnector.java (line 302) Stopped ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-13 22:19:55,909 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@23d2a7e8{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-13 22:20:06,780 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 22:20:06,990 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 22:20:07,368 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@2925bf5b{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 22:20:07,496 AbstractConnector.java (line 265) Started ServerConnector@5656be13{HTTP/1.1}{localhost:25002}
+ INFO [qtp346224929-22 - /v1/users/get-list] 2017-11-13 22:20:18,114 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp346224929-22 - /v1/users/get-list] 2017-11-13 22:20:23,246 UserService.java (line 236) get-list: 
+ INFO [qtp346224929-22 - /v1/users/get-list] 2017-11-13 22:21:01,700 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","loadmore":false,"total":0}
+ INFO [Thread-1] 2017-11-13 22:21:01,719 AbstractConnector.java (line 302) Stopped ServerConnector@5656be13{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-13 22:21:01,723 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@2925bf5b{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-13 22:22:34,225 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 22:22:34,611 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 22:22:34,955 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@23d2a7e8{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 22:22:35,043 AbstractConnector.java (line 265) Started ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
+ INFO [qtp356473385-19 - /v1/users/get-list] 2017-11-13 22:22:35,399 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp356473385-19 - /v1/users/get-list] 2017-11-13 22:22:35,407 UserService.java (line 236) get-list: 
+ INFO [qtp356473385-19 - /v1/users/get-list] 2017-11-13 22:22:37,076 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","data":[{"userID":1,"identityCard":"0721120050\t","userName":"solidsnack","password":"12345","fullName":"Y Sa","email":"ysa7131@yahoo.com","address":"157B/20A Dương Bá Trạc, phường 1, Quận 8 Tp.hồ Chí Minh","phone":"01222403111","schoolID":1,"dateCreated":1510544152349,"dateModified":0,"extProperties":0,"type":0,"status":0,"birthday":0,"gender":0}],"loadmore":false,"total":1}
+ INFO [qtp356473385-22 - /v1/users/get-list] 2017-11-13 22:30:55,346 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp356473385-22 - /v1/users/get-list] 2017-11-13 22:30:55,347 UserService.java (line 236) get-list: 
+ INFO [qtp356473385-22 - /v1/users/get-list] 2017-11-13 22:30:57,090 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","data":[{"userID":1,"identityCard":"0721120050\t","userName":"solidsnack","password":"12345","fullName":"Y Sa","email":"ysa7131@yahoo.com","address":"157B/20A Dương Bá Trạc, phường 1, Quận 8 Tp.hồ Chí Minh","phone":"01222403111","schoolID":1,"dateCreated":1510544152349,"dateModified":0,"extProperties":0,"type":0,"status":0,"birthday":0,"gender":0}],"loadmore":false,"total":1}
+ INFO [qtp356473385-15 - /v1/users/get-list] 2017-11-13 22:31:02,897 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp356473385-15 - /v1/users/get-list] 2017-11-13 22:31:02,897 UserService.java (line 236) get-list: 
+ INFO [qtp356473385-15 - /v1/users/get-list] 2017-11-13 22:31:03,188 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","data":[{"userID":1,"identityCard":"0721120050\t","userName":"solidsnack","password":"12345","fullName":"Y Sa","email":"ysa7131@yahoo.com","address":"157B/20A Dương Bá Trạc, phường 1, Quận 8 Tp.hồ Chí Minh","phone":"01222403111","schoolID":1,"dateCreated":1510544152349,"dateModified":0,"extProperties":0,"type":0,"status":0,"birthday":0,"gender":0}],"loadmore":false,"total":1}

@@ -1,0 +1,2 @@
+ INFO [Thread-1] 2017-11-14 13:28:24,625 AbstractConnector.java (line 302) Stopped ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-14 13:28:24,649 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@23d2a7e8{/,null,UNAVAILABLE}

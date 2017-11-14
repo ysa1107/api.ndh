@@ -7,15 +7,15 @@ package api.servlet;
 
 import api.configuration.ConfigInfo;
 import api.utils.LocalCached;
-import com.shopiness.framework.common.LogUtil;
+import com.kyt.framework.config.LogUtil;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import shopiness.rewrite.entity.RewriteEntity;
-import shopiness.rewrite.handle.ShopinessRewrite;
+import nct.rewrite.entity.RewriteEntity;
+import nct.rewrite.handle.NctRewrite;
 
 /**
  *
@@ -33,7 +33,7 @@ public class RedirectServlet extends HttpServlet {
                 return;
             }
 
-            ShopinessRewrite rewrite = new ShopinessRewrite();
+            NctRewrite rewrite = new NctRewrite();
             try {
                 rewrite.forwardRequestAPIMobile(request, response, getServletContext(), (List<RewriteEntity>) LocalCached.get(ConfigInfo.REWRITE_ENTITY_MEM_KEY));
             } catch (Exception ex) {

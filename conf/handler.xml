@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8">
-    <handlers>  
-        <!--huanlh-->
+    <handlers>
         <handler>
             <servlet>api.servlet.CommonServlet</servlet>
             <controller>api.controller.common.CommonController</controller>
@@ -9,40 +8,6 @@
             <servlet>api.servlet.UserServlet</servlet>
             <controller>api.controller.user.UserController</controller>
         </handler>
-<!--        <handler>
-            <servlet>api.servlet.DealServlet</servlet>
-            <controller>api.controller.common.DealController</controller>
-        </handler>
-        
-         Liemtpt: Brand
-        <handler>
-            <servlet>api.servlet.StoreServlet</servlet>
-            <controller>api.controller.store.StoreController</controller>
-        </handler>
-	<handler>
-            <servlet>api.servlet.ProductServlet</servlet>
-            <controller>api.controller.product.ProductController</controller>
-        </handler>
-        <handler>
-            <servlet>api.servlet.BrandServlet</servlet>
-            <controller>api.controller.brand.BrandController</controller>
-        </handler>
-        <handler>
-            <servlet>api.servlet.CategoryServlet</servlet>
-            <controller>api.controller.category.CategoryController</controller>
-        </handler>
-        <handler>
-            <servlet>api.servlet.AreaServlet</servlet>
-            <controller>api.controller.area.AreaController</controller>
-        </handler>
-        
-        EVENT
-        <handler>
-            <servlet>api.servlet.EventServlet</servlet>
-            <controller>api.controller.event.EventController</controller>
-        </handler>
-        -->
-        <!--Log-->
         <handler>
             <servlet>api.servlet.LogsServlet</servlet>
             <controller>api.controller.log.LogController</controller>

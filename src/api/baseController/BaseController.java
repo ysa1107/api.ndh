@@ -4,6 +4,7 @@
  */
 package api.baseController;
 
+import api.entities.JsonResultEnt;
 import api.utils.FunctionUtils;
 import com.kyt.framework.config.LogUtil;
 import com.kyt.framework.util.ConvertUtils;

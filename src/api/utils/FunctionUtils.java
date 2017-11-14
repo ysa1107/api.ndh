@@ -4,17 +4,9 @@
  */
 package api.utils;
 
-import api.cache.ApiCA;
 import api.configuration.ConfigInfo;
-import api.entities.DeviceInfoEnt;
 import api.serviceUtils.JWTService;
 import api.serviceUtils.UserService;
-//import com.nct.api.tokenv2.model.TokenBC;
-import com.nct.shop.thrift.deal.models.TUserResult;
-import com.shopiness.framework.common.LogUtil;
-import com.shopiness.framework.util.ConvertUtils;
-import com.shopiness.framework.util.JSONUtil;
-import com.shopiness.framework.util.StringUtils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -35,18 +27,23 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.kyt.framework.config.LogUtil;
+import com.kyt.framework.util.ConvertUtils;
+import nct.rewrite.entity.RewriteEntity;
+import nct.rewrite.utils.NctRewriteUtils;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.WordUtils;
 import org.apache.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import shopiness.api.jwt.token.model.EJwtTokenStatusResult;
 import shopiness.api.jwt.token.model.JwtTokenResult;
 import shopiness.api.tokenv2.model.TokenBC;
-import shopiness.rewrite.entity.RewriteEntity;
-import shopiness.rewrite.utils.ShopinessRewriteUtils;
 
 /**
  *
@@ -76,58 +73,11 @@ public class FunctionUtils {
             return true;
         }
 
-        if (params.get("clientip").equals("14.169.191.142")) { //27.77.121.164
-            logger.info("AccessToken = " + accessToken);
-            JwtTokenResult tokenRes = JWTService.checkToken(accessToken);
-            if (tokenRes == null || !tokenRes.status.equals(EJwtTokenStatusResult.SUCCESS)) {
-                response.addHeader("FailToken", "401");
-                return false;
-            }
-
-            if (ConfigInfo.IS_GET_USERID_FROM_TOKEN) {
-                if (tokenRes.data != null && tokenRes.data.containsKey("deviceinfo")) {
-                    String strDeviceInfo = tokenRes.data.get("deviceinfo");
-                    DeviceInfoEnt deviceInfo = JSONUtil.DeSerialize(strDeviceInfo, DeviceInfoEnt.class);
-                    if (deviceInfo != null) {
-                        if (!FunctionUtils.IsNullOrEmpty(deviceInfo.getUsername())) {
-                            params.put("username", deviceInfo.getUsername());
-                            params.put("deviceId", deviceInfo.getDeviceId());
-                            long uid = UserService.getInstance().getUserIdByUsername(deviceInfo.getUsername());
-                            params.put("userId", String.valueOf(uid));
-                        } else {
-                            params.put("username", "");
-                            params.put("userId", "0");
-                            params.put("deviceId", "");
-                        }
-                    }
-                }
-            }
-        } else {
-            if (!TokenBC.checkAccessToken(accessToken)) {
-                response.addHeader("FailToken", "401");
-                return false;
-            }
-
-            if (ConfigInfo.IS_GET_USERID_FROM_TOKEN) {
-                String action = params.get("action");
-                if (!action.equals("login") && !action.equals("register")
-                        && !action.equals("reset-password")) {
-                    String strDeviceInfo = TokenBC.getDeviceInfo(accessToken);
-                    DeviceInfoEnt deviceInfo = JSONUtil.DeSerialize(strDeviceInfo, DeviceInfoEnt.class);
-                    if (deviceInfo != null) {
-                        if (!FunctionUtils.IsNullOrEmpty(deviceInfo.getUsername())) {
-                            params.put("username", deviceInfo.getUsername());
-                            params.put("deviceId", deviceInfo.getDeviceId());
-                            long uid = UserService.getInstance().getUserIdByUsername(deviceInfo.getUsername());
-                            params.put("userId", String.valueOf(uid));
-                        } else {
-                            params.put("username", "");
-                            params.put("userId", "0");
-                            params.put("deviceId", "");
-                        }
-                    }
-                }
-            }           
+        logger.info("AccessToken = " + accessToken);
+        JwtTokenResult tokenRes = JWTService.checkToken(accessToken);
+        if (tokenRes == null || !tokenRes.status.equals(EJwtTokenStatusResult.SUCCESS)) {
+            response.addHeader("FailToken", "401");
+            return false;
         }
         return true;
     }
@@ -186,7 +136,7 @@ public class FunctionUtils {
 
     public static void warmListRewriteEntity() {
         try {
-            List<RewriteEntity> listRewriteEntity = ShopinessRewriteUtils.parseConfigRewrite(ConfigInfo.REWRITE_PATH);
+            List<RewriteEntity> listRewriteEntity = NctRewriteUtils.parseConfigRewrite(ConfigInfo.REWRITE_PATH);
             LocalCached.put(ConfigInfo.REWRITE_ENTITY_MEM_KEY, listRewriteEntity);
         } catch (Exception ex) {
             logger.error(LogUtil.stackTrace(ex));

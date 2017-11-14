@@ -1,0 +1,36 @@
+ INFO [main] 2017-11-12 01:04:34,547 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-12 01:04:34,767 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-12 01:04:35,058 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@1d8d30f7{/,null,AVAILABLE}
+ INFO [main] 2017-11-12 01:04:35,191 AbstractConnector.java (line 265) Started ServerConnector@63e2203c{HTTP/1.1}{localhost:25002}
+ INFO [qtp167185492-20 - /v1/users] 2017-11-12 01:04:44,052 NctRewrite.java (line 254) Rewrite URL : http://localhost:25002/users?version=1&mainId=&action=&subId=
+ INFO [qtp167185492-23 - /v1/users] 2017-11-12 01:05:01,258 NctRewrite.java (line 254) Rewrite URL : http://localhost:25002/users?version=1&mainId=&action=&subId=
+ INFO [qtp167185492-26 - /v1/users] 2017-11-12 01:05:14,360 NctRewrite.java (line 254) Rewrite URL : http://localhost:25002/users?version=1&mainId=&action=&subId=
+ INFO [qtp167185492-28 - /v1/users/init] 2017-11-12 01:05:22,843 NctRewrite.java (line 254) Rewrite URL : http://localhost:25002/users?version=1&mainId=&action=init&subId=
+ INFO [qtp167185492-30 - /v1/users/init?action=init] 2017-11-12 01:05:34,759 NctRewrite.java (line 254) Rewrite URL : http://localhost:25002/users?action=init&version=1&mainId=&action=init&subId=
+ INFO [Thread-1] 2017-11-12 01:06:03,608 AbstractConnector.java (line 302) Stopped ServerConnector@63e2203c{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-12 01:06:03,630 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@1d8d30f7{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-12 01:06:08,231 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-12 01:06:08,436 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-12 01:06:08,637 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@38bc8ab5{/,null,AVAILABLE}
+ INFO [main] 2017-11-12 01:06:08,707 AbstractConnector.java (line 265) Started ServerConnector@7c29daf3{HTTP/1.1}{localhost:25002}
+ INFO [qtp159259014-18 - /v1/users/init?action=init] 2017-11-12 01:06:09,657 UserControllerv1.java (line 30) PARAMS:{subId=, method=GET, clientip=127.0.0.1, module=users, action=init, X-Location=null, mainId=, version=1}
+ INFO [qtp159259014-21 - /v1/users/init?action=init] 2017-11-12 01:06:10,659 UserControllerv1.java (line 30) PARAMS:{subId=, method=GET, clientip=127.0.0.1, module=users, action=init, X-Location=null, mainId=, version=1}
+ INFO [Thread-1] 2017-11-12 01:06:14,980 AbstractConnector.java (line 302) Stopped ServerConnector@7c29daf3{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-12 01:06:14,983 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@38bc8ab5{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-12 01:06:57,514 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-12 01:06:57,796 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-12 01:06:58,230 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@b3ca52e{/,null,AVAILABLE}
+ INFO [main] 2017-11-12 01:06:58,285 AbstractConnector.java (line 265) Started ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [main] 2017-11-12 01:07:34,378 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-12 01:07:34,528 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-12 01:07:34,873 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@38bc8ab5{/,null,AVAILABLE}
+ INFO [qtp785447854-22 - /v1/users/init?action=init] 2017-11-12 01:07:37,479 UserControllerv1.java (line 30) PARAMS:{subId=, method=GET, clientip=127.0.0.1, module=users, action=init, X-Location=null, mainId=, version=1}
+ INFO [Thread-1] 2017-11-12 01:07:37,587 AbstractConnector.java (line 302) Stopped ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-12 01:07:37,611 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@b3ca52e{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-12 01:07:55,598 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-12 01:07:55,796 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-12 01:07:56,161 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@b3ca52e{/,null,AVAILABLE}
+ INFO [main] 2017-11-12 01:07:56,220 AbstractConnector.java (line 265) Started ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [qtp785447854-22 - /v1/users?action=init] 2017-11-12 01:08:55,563 UserControllerv1.java (line 30) PARAMS:{subId=, method=GET, clientip=127.0.0.1, module=users, action=init, X-Location=null, mainId=, version=1}
+ INFO [qtp785447854-22 - /v1/users?action=init] 2017-11-12 01:09:06,035 UserControllerv1.java (line 30) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=init, X-Location=null, mainId=, version=1}
+ INFO [qtp785447854-22 - /v1/users?action=init] 2017-11-12 01:09:06,035 UserControllerv1.java (line 64) RESULT: {"code":0,"data":"Init Successfully !!!"}

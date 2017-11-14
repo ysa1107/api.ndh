@@ -66,9 +66,9 @@ public class HttpBasePage<T> extends HttpServlet {
         return this._package;
     }
 
-    private final Integer[] highestVersionModule_Commons = {1,2};
+    private final Integer[] highestVersionModule_Commons = {1};
     private final Integer[] highestVersionModule_Users = {1};
-    private final Integer[] highestVersionModule_Deals = {1, 2};
+    private final Integer[] highestVersionModule_Deals = {1};
     private final Integer[] highestVersionModule_Brands = {1, 2};
     private final Integer[] highestVersionModule_Stores = {1};
     private final Integer[] highestVersionModule_Categories = {1};

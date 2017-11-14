@@ -10,26 +10,26 @@ import api.baseController.HttpBasePage;
 import api.configuration.ConfigInfo;
 import api.entities.JsonResultEnt;
 import api.utils.FunctionUtils;
-import com.shopiness.framework.common.LogUtil;
-import com.shopiness.framework.metrics.LatencyMetrics;
-import com.shopiness.framework.util.ConvertUtils;
-import com.shopiness.framework.util.DateTimeUtils;
-import com.shopiness.framework.util.JSONUtil;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.kyt.framework.config.LogUtil;
+import com.kyt.framework.util.ConvertUtils;
+import com.kyt.framework.util.DateTimeUtils;
+import com.kyt.framework.util.JSONUtil;
 import org.apache.log4j.Logger;
 
 /**
  *
- * @author PhongDQ
+ * @author Y Sa
  */
 public class CommonServlet extends HttpBasePage<CommonServlet> {
 
-    private static final Logger logger = LogUtil.getLogger(CommonServlet.class);    
+    private static final Logger logger = LogUtil.getLogger(CommonServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -40,7 +40,7 @@ public class CommonServlet extends HttpBasePage<CommonServlet> {
         try {
             Map<String, String> mapParams = FunctionUtils.collectParams(request);
             mapParams.put("module", "commons");
-            int version = ConvertUtils.toInt(mapParams.get("version"), 1);    
+            int version = ConvertUtils.toInt(mapParams.get("version"), 1);
             
             version = getVersion("commons", version);
             
@@ -56,14 +56,11 @@ public class CommonServlet extends HttpBasePage<CommonServlet> {
                     break;
             }
         } catch (Exception ex) {
-            LatencyMetrics.getInstance(ConfigInfo.METRIC_SERVER).incError();
-            logger.error(LogUtil.stackTrace(ex));            
+            logger.error(LogUtil.stackTrace(ex));
             outputJson = JsonResultEnt.getJsonSystemError();
         } 
         finally {
-            LatencyMetrics.getInstance(ConfigInfo.METRIC_SERVER).addNano(System.nanoTime() - startTime);
             response.addHeader("Access-Control-Allow-Origin", "*");
-//            response.addHeader("FailToken", "404");
             out.println(JSONUtil.Serialize(outputJson));
             out.close();
         }

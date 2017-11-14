@@ -1,0 +1,4 @@
+ INFO [qtp785447854-23 - /v1/users/register] 2017-11-13 12:39:28,001 UserControllerv1.java (line 30) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=register, X-Location=null, mainId=, version=1, info={"1":"0","2":"0721120050","3":"solidsnack","4":"fa13e3a30e64f640cb40b5f555888730","5":"ysa7131@yahoo.com","6":"157B/20A Dương Bá Trạc","7":"01222403111","8":1,"9":0,"10":"","11":0,"12":"YSA","13":0,"14":0}, username=solidsnack}
+ INFO [Thread-1] 2017-11-13 12:39:28,089 AbstractConnector.java (line 302) Stopped ServerConnector@3270d194{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-13 12:39:28,094 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@b3ca52e{/,null,UNAVAILABLE}
+ INFO [qtp785447854-23 - /v1/users/register] 2017-11-13 12:39:28,270 UserControllerv1.java (line 64) RESULT: {"code":221,"msgCode":"221"}

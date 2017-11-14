@@ -1,0 +1,4 @@
+ INFO [main] 2017-11-13 07:48:34,574 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-13 07:48:34,763 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-13 07:48:35,028 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@b3ca52e{/,null,AVAILABLE}
+ INFO [main] 2017-11-13 07:48:35,099 AbstractConnector.java (line 265) Started ServerConnector@3270d194{HTTP/1.1}{localhost:25002}

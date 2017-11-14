@@ -6,9 +6,6 @@
 package api.utils;
 
 import api.configuration.ConfigInfo;
-import com.shopiness.framework.common.LogUtil;
-import com.shopiness.framework.util.DateTimeUtils;
-import com.shopiness.framework.util.JSONUtil;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
@@ -18,12 +15,16 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
+
+import com.kyt.framework.config.LogUtil;
+import com.kyt.framework.util.DateTimeUtils;
+import com.kyt.framework.util.JSONUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
 /**
  *
- * @author nghiapht
+ * @author Y Sa
  */
 public class UploadUtil {
 
@@ -70,20 +71,6 @@ public class UploadUtil {
         return null;
     }
 
-//    public static UploadResultEnt uploadMedia(InputStream fileStream, String fileName) {
-//        try {
-//            if (fileStream != null && fileName != null) {
-//                String responseMsg = UploadMediaToServer(fileStream, fileName);
-//                UploadResultEnt uploadResult = JSONUtil.DeSerialize(responseMsg, UploadResultEnt.class);
-//                if (uploadResult != null) {
-//                    return uploadResult;
-//                }
-//            }
-//        } catch (Exception e) {
-//            logger.error(LogUtil.stackTrace(e));
-//        }
-//        return null;
-//    }
     private static String DoMD5(String md5) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
@@ -101,15 +88,15 @@ public class UploadUtil {
 
     private static String UploadImageToServer(InputStream fileInputStream, String type, String fileName) {
         try {
-            String serverUpload = ConfigInfo.SERVER_UPLOAD_IMAGE;
-            if (fileName.toLowerCase().endsWith(".png")) {
-                serverUpload = ConfigInfo.SERVER_UPLOAD_IMAGE_PNG;
-            }
-            Long time = DateTimeUtils.getMilisecondsNow();
-            String token = DoMD5(ConfigInfo.UPLOAD_APPID + ConfigInfo.UPLOAD_SECRECT_KEY + time);
-            String urlUpload = serverUpload + "?type=" + type + "&appId=" + ConfigInfo.UPLOAD_APPID + "&token=" + token + "&time=" + time;
+//            String serverUpload = ConfigInfo.SERVER_UPLOAD_IMAGE;
+//            if (fileName.toLowerCase().endsWith(".png")) {
+//                serverUpload = ConfigInfo.SERVER_UPLOAD_IMAGE_PNG;
+//            }
+//            Long time = DateTimeUtils.getMilisecondsNow();
+//            String token = DoMD5(ConfigInfo.UPLOAD_APPID + ConfigInfo.UPLOAD_SECRECT_KEY + time);
+//            String urlUpload = serverUpload + "?type=" + type + "&appId=" + ConfigInfo.UPLOAD_APPID + "&token=" + token + "&time=" + time;
 
-            return UploadToURL(urlUpload, fileInputStream, fileName);
+            //return UploadToURL(urlUpload, fileInputStream, fileName);
         } catch (Exception e) {
             logger.error(LogUtil.stackTrace(e));
         }
@@ -131,32 +118,19 @@ public class UploadUtil {
         return null;
     }
 
-//    private static String downloadImageToServer(String type, String imageUrl) {
-//        try {
+    public static String downloadAvatarFromImageUrl(String type, String imageUrl) {
+        try {
 //            String serverUpload = ConfigInfo.SERVER_DOWNLOAD_AVATAR;
 //            Long time = DateTimeUtils.getMilisecondsNow();
 //            String token = DoMD5(ConfigInfo.UPLOAD_APPID + ConfigInfo.UPLOAD_SECRECT_KEY + time);
-//            String urlUpload = serverUpload + "&imageUrl=" + imageUrl + "type=" + type + "&appId=" + ConfigInfo.UPLOAD_APPID + "&token=" + token + "&time=" + time;
 //
-//            return UploadToURL(urlUpload, null, imageUrl);
-//        } catch (Exception e) {
-//            logger.error(LogUtil.stackTrace(e));
-//        }
-//        return "";
-//    }
-    public static String downloadAvatarFromImageUrl(String type, String imageUrl) {
-        try {
-            String serverUpload = ConfigInfo.SERVER_DOWNLOAD_AVATAR;
-            Long time = DateTimeUtils.getMilisecondsNow();
-            String token = DoMD5(ConfigInfo.UPLOAD_APPID + ConfigInfo.UPLOAD_SECRECT_KEY + time);
-
-            serverUpload += "?imageUrl=" + URLEncoder.encode(imageUrl, "UTF-8")
-                    + "&type=" + type
-                    + "&appId=" + ConfigInfo.UPLOAD_APPID
-                    + "&time=" + time
-                    + "&token=" + token;
-
-            return UploadToURL(serverUpload);
+//            serverUpload += "?imageUrl=" + URLEncoder.encode(imageUrl, "UTF-8")
+//                    + "&type=" + type
+//                    + "&appId=" + ConfigInfo.UPLOAD_APPID
+//                    + "&time=" + time
+//                    + "&token=" + token;
+//
+//            return UploadToURL(serverUpload);
         } catch (Exception e) {
             logger.error(LogUtil.stackTrace(e));
         }
@@ -343,13 +317,5 @@ public class UploadUtil {
             logger.error(LogUtil.stackTrace(e));
         }
         return is;
-    }
-
-    public static void main(String[] args) {
-        Long time = DateTimeUtils.getMilisecondsNow();
-        String token = DoMD5(ConfigInfo.UPLOAD_APPID + ConfigInfo.UPLOAD_SECRECT_KEY + time);
-
-        System.out.println(time);
-        System.out.println(token);
     }
 }

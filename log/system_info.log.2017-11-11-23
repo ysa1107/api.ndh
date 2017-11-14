@@ -1,0 +1,24 @@
+ INFO [main] 2017-11-11 23:50:00,703 ServiceDaemon.java (line 75) Start service with host: null - port: 0
+ INFO [main] 2017-11-11 23:50:00,845 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-11 23:50:01,142 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@32d2fa64{/,null,AVAILABLE}
+ INFO [main] 2017-11-11 23:50:01,213 AbstractConnector.java (line 265) Started ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:58728}
+ INFO [Thread-1] 2017-11-11 23:51:27,822 AbstractConnector.java (line 302) Stopped ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:0}
+ INFO [Thread-1] 2017-11-11 23:51:27,826 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@32d2fa64{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-11 23:51:34,636 ServiceDaemon.java (line 75) Start service with host: null - port: 0
+ INFO [main] 2017-11-11 23:51:34,754 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-11 23:51:34,980 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@32d2fa64{/,null,AVAILABLE}
+ INFO [main] 2017-11-11 23:51:35,034 AbstractConnector.java (line 265) Started ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:58736}
+ INFO [Thread-1] 2017-11-11 23:52:04,783 AbstractConnector.java (line 302) Stopped ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:0}
+ INFO [Thread-1] 2017-11-11 23:52:04,786 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@32d2fa64{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-11 23:53:01,343 ServiceDaemon.java (line 75) Start service with host: null - port: 0
+ INFO [main] 2017-11-11 23:53:01,485 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-11 23:53:01,692 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@32d2fa64{/,null,AVAILABLE}
+ INFO [main] 2017-11-11 23:53:01,737 AbstractConnector.java (line 265) Started ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:58755}
+ INFO [Thread-1] 2017-11-11 23:53:05,810 AbstractConnector.java (line 302) Stopped ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:0}
+ INFO [Thread-1] 2017-11-11 23:53:05,813 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@32d2fa64{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-11 23:53:36,094 ServiceDaemon.java (line 75) Start service with host: null - port: 0
+ INFO [main] 2017-11-11 23:53:36,333 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-11 23:53:36,552 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@32d2fa64{/,null,AVAILABLE}
+ INFO [main] 2017-11-11 23:53:36,602 AbstractConnector.java (line 265) Started ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:58762}
+ INFO [Thread-1] 2017-11-11 23:53:54,073 AbstractConnector.java (line 302) Stopped ServerConnector@3224f60b{HTTP/1.1}{0.0.0.0:0}
+ INFO [Thread-1] 2017-11-11 23:53:54,078 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@32d2fa64{/,null,UNAVAILABLE}
