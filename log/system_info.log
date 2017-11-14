@@ -1,2 +1,15 @@
- INFO [Thread-1] 2017-11-14 13:28:24,625 AbstractConnector.java (line 302) Stopped ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
- INFO [Thread-1] 2017-11-14 13:28:24,649 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@23d2a7e8{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-14 21:31:17,789 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-14 21:31:18,088 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-14 21:31:18,341 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@23d2a7e8{/,null,AVAILABLE}
+ INFO [main] 2017-11-14 21:31:18,403 AbstractConnector.java (line 265) Started ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
+ INFO [qtp356473385-20 - /v1/users/get-list] 2017-11-14 21:31:22,176 UserControllerv1.java (line 31) PARAMS:{subId=, method=POST, clientip=127.0.0.1, module=users, action=get-list, X-Location=null, mainId=, version=1}
+ INFO [qtp356473385-20 - /v1/users/get-list] 2017-11-14 21:31:22,181 UserService.java (line 236) get-list: 
+ INFO [qtp356473385-20 - /v1/users/get-list] 2017-11-14 21:31:23,974 UserControllerv1.java (line 68) RESULT: {"code":202,"msgCode":"202","data":[{"userID":1,"identityCard":"0721120050\t","userName":"solidsnack","password":"12345","fullName":"Y Sa","email":"ysa7131@yahoo.com","address":"157B/20A Dương Bá Trạc, phường 1, Quận 8 Tp.hồ Chí Minh","phone":"01222403111","schoolID":1,"dateCreated":1510544152349,"dateModified":0,"extProperties":0,"type":0,"status":0,"birthday":0,"gender":0},{"userID":2,"identityCard":"123","userName":"requester","password":"2b162dc08875dc05103e85c1d6ce5f81","fullName":"Requester","email":"requester@ndh.vn","address":"123","phone":"123","schoolID":0,"dateCreated":0,"dateModified":0,"extProperties":0,"avatarURL":"","type":0,"status":0,"birthday":0,"gender":0},{"userID":3,"identityCard":"123","userName":"receiver","password":"2b162dc08875dc05103e85c1d6ce5f81","fullName":"Receiver","email":"receiver@ndh.vn","address":"123","phone":"0","schoolID":1,"dateCreated":0,"dateModified":0,"extProperties":0,"avatarURL":"","type":1,"status":0,"birthday":0,"gender":0}],"loadmore":false,"total":3}
+ INFO [Thread-1] 2017-11-14 21:31:29,811 AbstractConnector.java (line 302) Stopped ServerConnector@5a8806ef{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-14 21:31:29,817 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@23d2a7e8{/,null,UNAVAILABLE}
+ INFO [main] 2017-11-14 21:31:34,244 ServiceDaemon.java (line 75) Start service with host: localhost - port: 25002
+ INFO [main] 2017-11-14 21:31:34,531 Server.java (line 300) jetty-9.1.0.v20131115
+ INFO [main] 2017-11-14 21:31:34,923 ContextHandler.java (line 746) Started o.e.j.s.ServletContextHandler@2925bf5b{/,null,AVAILABLE}
+ INFO [main] 2017-11-14 21:31:34,997 AbstractConnector.java (line 265) Started ServerConnector@5656be13{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-14 21:34:09,337 AbstractConnector.java (line 302) Stopped ServerConnector@5656be13{HTTP/1.1}{localhost:25002}
+ INFO [Thread-1] 2017-11-14 21:34:09,339 ContextHandler.java (line 863) Stopped o.e.j.s.ServletContextHandler@2925bf5b{/,null,UNAVAILABLE}
