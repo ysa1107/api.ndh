@@ -15,6 +15,13 @@
             <typeMove>3</typeMove>
             <status>true</status>
         </item>
+        <item>
+            <urlPrefix>/requests</urlPrefix>
+            <urlRegex>^/requests\\?(.*)$</urlRegex>
+            <urlRegexReplace>/requests?$1</urlRegexReplace>
+            <typeMove>3</typeMove>
+            <status>true</status>
+        </item>
         
 <!--        <item>
             <urlPrefix>/deals</urlPrefix>

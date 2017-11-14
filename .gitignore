@@ -1,1 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/
+/nbproject/
+/build.xml
+/LICENSE
+/manifest.mf
+/nbproject/private/

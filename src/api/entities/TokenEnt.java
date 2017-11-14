@@ -13,16 +13,13 @@ import com.google.gson.annotations.SerializedName;
  */
 public class TokenEnt {
     @SerializedName("1")
-    public String refreshToken;
-    @SerializedName("2")
     public String accessToken;
-    @SerializedName("3")
+    @SerializedName("2")
     public long tokenExpiredAt;
-    @SerializedName("4")
+    @SerializedName("3")
     public long currentTime;
 
     public TokenEnt() {
-        this.refreshToken = "";
         this.accessToken = "";
         this.tokenExpiredAt = 0;
         this.currentTime = System.currentTimeMillis();

@@ -13,6 +13,10 @@
             <controller>api.controller.log.LogController</controller>
         </handler>
         <handler>
+            <servlet>api.servlet.RequestServlet</servlet>
+            <controller>api.controller.request.RequestController</controller>
+        </handler>
+        <handler>
             <servlet>api.servlet.ErrorServlet</servlet>
             <controller>api.controller.error.ErrorController</controller>
         </handler>

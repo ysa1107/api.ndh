@@ -27,38 +27,11 @@ public class HttpBasePage<T> extends HttpServlet {
             case "api.servlet.UserServlet":
                 this._package = String.format(packageTmp, "api.controller.user.UserController", version);
                 break;
-            case "api.servlet.DealServlet":
-                this._package = String.format(packageTmp, "api.controller.deal.DealController", version);
+            case "api.servlet.RequestServlet":
+                this._package = String.format(packageTmp, "api.controller.request.RequestController", version);
                 break;
             case "api.servlet.LogsServlet":
                 this._package = String.format(packageTmp, "api.controller.log.LogController", version);
-                break;
-            case "api.servlet.BrandServlet":
-                this._package = String.format(packageTmp, "api.controller.brand.BrandController", version);
-                break;
-            case "api.servlet.StoreServlet":
-                this._package = String.format(packageTmp, "api.controller.store.StoreController", version);
-                break;
-            case "api.servlet.CategoryServlet":
-                this._package = String.format(packageTmp, "api.controller.category.CategoryController", version);
-                break;
-            case "api.servlet.AreaServlet":
-                this._package = String.format(packageTmp, "api.controller.area.AreaController", version);
-                break;
-            case "api.servlet.ProductServlet":
-                this._package = String.format(packageTmp, "api.controller.product.ProductController", version);
-                break;
-            case "api.servlet.CommentServlet":
-                this._package = String.format(packageTmp, "api.controller.comment.CommentController", version);
-                break;
-            case "api.servlet.ContactServlet":
-                this._package = String.format(packageTmp, "api.controller.contact.ContactController", version);
-                break;
-            case "api.servlet.EventServlet":
-                this._package = String.format(packageTmp, "api.controller.event.EventController", version);
-                break;
-            case "api.servlet.CashbackServlet":
-                this._package = String.format(packageTmp, "api.controller.cashback.CashbackController", version);
                 break;
             default:
                 break;
@@ -68,7 +41,7 @@ public class HttpBasePage<T> extends HttpServlet {
 
     private final Integer[] highestVersionModule_Commons = {1};
     private final Integer[] highestVersionModule_Users = {1};
-    private final Integer[] highestVersionModule_Deals = {1};
+    private final Integer[] highestVersionModule_Request = {1};
     private final Integer[] highestVersionModule_Brands = {1, 2};
     private final Integer[] highestVersionModule_Stores = {1};
     private final Integer[] highestVersionModule_Categories = {1};
@@ -86,7 +59,7 @@ public class HttpBasePage<T> extends HttpServlet {
             case "users":
                 return findVersion(highestVersionModule_Users, versionRequest);
             case "deals":
-                return findVersion(highestVersionModule_Deals, versionRequest);
+                return findVersion(highestVersionModule_Request, versionRequest);
             case "brands":
                 return findVersion(highestVersionModule_Brands, versionRequest);
             case "stores":

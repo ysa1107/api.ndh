@@ -74,7 +74,7 @@ public class CommonControllerv1 extends BaseController {
 
             tokenViewEnt.accessToken = token.token;
             logger.info("JWT token = " + token.token);
-            tokenViewEnt.refreshToken = token.token;
+            //tokenViewEnt.refreshToken = token.token;
             tokenViewEnt.tokenExpiredAt = DateTimeUtils.getMilisecondsNow() + ConfigInfo.TIME_JWTTOKEN_EXPIRED;
         return JsonResultEnt.getJsonSystemError();
     }

@@ -12,6 +12,8 @@ import com.kyt.framework.config.LogUtil;
 import entity.TUserValue;
 import org.apache.log4j.Logger;
 
+import javax.xml.ws.WebServiceRef;
+
 /**
  *
  * @author Y Sa
@@ -21,7 +23,7 @@ public class UserViewEnt {
     private static final Logger _logger = LogUtil.getLogger(UserViewEnt.class);
 
     @SerializedName("1")
-    public Long userID;
+    public Long userId;
     @SerializedName("2")
     public String identityCard;
     @SerializedName("3")
@@ -37,20 +39,22 @@ public class UserViewEnt {
     @SerializedName("8")
     public Long schoolID;
     @SerializedName("9")
-    public Long dateCreated;
+    public  String schoolName;
     @SerializedName("10")
-    public String avatar;
+    public Long dateCreated;
     @SerializedName("11")
-    public Long dateModified;
+    public String avatar;
     @SerializedName("12")
-    public String fullName;
+    public Long dateModified;
     @SerializedName("13")
-    public Long birthday;
+    public String fullName;
     @SerializedName("14")
+    public Long birthday;
+    @SerializedName("15")
     public short gender;
 
     public UserViewEnt() {
-        this.userID = 0L;
+        this.userId = 0L;
         this.identityCard= "";
         this.username = "";
         this.password = "";
@@ -67,7 +71,7 @@ public class UserViewEnt {
     }
     
     public UserViewEnt(TUserValue user){
-        this.userID = user.userID;
+        this.userId = user.userID;
         this.username = user.userName;
         this.fullName = user.fullName;
         this.email = user.email;

@@ -95,6 +95,7 @@ public class ServiceDaemon {
         // Servlet Mapping URL
         handler.addServlet("api.servlet.CommonServlet", "/commons");
         handler.addServlet("api.servlet.UserServlet", "/users");
+        handler.addServlet("api.servlet.RequestServlet","/requests");
 
 
         handler.addServlet("api.servlet.ErrorServlet", "/errors");
